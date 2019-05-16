@@ -1,0 +1,16 @@
+# OSS to GUARDIAN Mapping Rules
+#
+# OSS-file-pattern=NSK-substitution-pattern
+# where both patterns are regular expressions.
+# An example is:
+#    (.*)\.c$=$1c
+# which matches anything followed by .c (the extension) and generates
+# the name from the first matching pattern and adding on a c.
+# Based on that rule, file.c maps to filec
+# Rules are processed in the order specified in this file.
+# This file is only created at init time. The file can be modified
+# and managed as part of the repository.
+^(.*)\.c$=$1c
+^(.*)\.h$=$1h
+^(.*)\.tal$=$1tal
+^(.*)\.cob$=$1cob
