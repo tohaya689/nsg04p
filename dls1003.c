@@ -82,7 +82,7 @@ short  dls1003_file_purgedata(char *filename, short filename_length) {
   /* ファイル内容の削除 */
 /****** #03 07/07/12 START ******/
   rc = (short)CONTROL(filenum, PURGEDATA);
-  if (_status_eq(rc)) {  /* 成功？ */
+  if (_status_eq(rc)) {  /* リターンコードのチェック */
 /****** #03 07/07/12 END ******/
     FILE_CLOSE_(filenum);
     return(rc + 2000);  /* ファイル削除エラー */
