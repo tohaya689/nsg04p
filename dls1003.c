@@ -63,6 +63,7 @@ short  dls1003_file_purgedata(char *, short);
 /*       概　要：指定されたファイルの内容を消去する。                        */
 /*                                                                           */
 /*       2019/06/14  NSGIT日本語対応　確認テスト                             */
+/*       2019/06/18  追加コメント                                            */
 /*****************************************************************************/
 short  dls1003_file_purgedata(char *filename, short filename_length) {
 
