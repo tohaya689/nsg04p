@@ -82,7 +82,7 @@ short  dls1003_file_purgedata(char *filename, short filename_length) {
 #endif
 /* #02 00/10/25 Mod end   */
 
-  if (rc != 0)  return(rc + 1000); /* ファイルオープンエラー */
+  if (rc != 0)  return(rc + 1000); /* ファイルオープンエラー Error! */
   /* ファイル内容の削除 */
 /****** #03 07/07/12 START ******/
   rc = (short)CONTROL(filenum, PURGEDATA);
